@@ -16,11 +16,11 @@
 - Melhorias Futuras
 - Licença
 - Contato
-
+<br><br>
 ## Descrição
 
 Este é um programa em Java que funciona como um conversor de moedas com interface gráfica simples, usando JOptionPane. Ele utiliza a API pública da ExchangeRate-API para consultar as taxas de câmbio reais e fazer conversões atualizadas de valores entre as moedas. A aplicação foi desenvolvida para ser simples, amigável e robusta, com tratamento de erros para entradas inválidas e problemas de comunicação com a API.
-
+<br><br>
 ## Funcionalidades
 
 Menu gráfico com 6 opções de conversão entre as moedas:
@@ -32,45 +32,45 @@ Menu gráfico com 6 opções de conversão entre as moedas:
 - EUR (Euro) <-> USD (Dólar)
 
 <p align="center">
-  <img src="/media/nunnes/nunnes/LEARNING/DIO/java/projetos/ConversorDeMoedas/ConversorDeMoedas/img/tela_inicial.png">
+  <img src="https://github.com/GNunnes/ConversorDeMoedas/blob/master/img/tela_inicial.png">
 </p>
 
 Opção para sair do programa.
 
 <p align="center">
-  <img src="/media/nunnes/nunnes/LEARNING/DIO/java/projetos/ConversorDeMoedas/ConversorDeMoedas/img/tela_saída.png">
+  <img src="https://github.com/GNunnes/ConversorDeMoedas/blob/master/img/tela_saída.png">
 </p>
 
 Entrada do usuário por caixas de diálogo (JOptionPane).
 
 <p align="center">
-  <img src="/media/nunnes/nunnes/LEARNING/DIO/java/projetos/ConversorDeMoedas/ConversorDeMoedas/img/tela_valor.png">
+  <img src="https://github.com/GNunnes/ConversorDeMoedas/blob/master/img/tela_valor.png">
 </p>
 
 Validação da opção do menu e valor digitado.
 
 <p align="center">
-  <img src="/media/nunnes/nunnes/LEARNING/DIO/java/projetos/ConversorDeMoedas/ConversorDeMoedas/img/tela_resultado.png">
+  <img src="https://github.com/GNunnes/ConversorDeMoedas/blob/master/img/tela_resultado.png">
 </p>
 
 Consulta dinâmica da taxa de câmbio via API ExchangeRate
 Conversão do valor informado pelo usuário com exibição do resultado
 Tratamento de erros com mensagens amigáveis para entradas inválidas e falhas na API
-
+<br><br>
 ## Tecnologias Utilizadas
 
 - Java SE 8+ (recomendado Java 11+)
 - Biblioteca Gson para parsing de JSON (com.google.gson)
 - API ExchangeRate (https://www.exchangerate-api.com/)
 - Swing (JOptionPane) para interface gráfica simples
-
+<br><br>
 ## Requisitos
 
 - Java JDK 8 ou superior instalado e configurado no PATH
 - Acesso à internet para consumir a API ExchangeRate
 - Biblioteca Gson incluída no projeto (JAR ou via gerenciador de dependências)
 - Chave válida da ExchangeRate API (free ou paga) — inserida na classe APIClient
-
+<br><br>
 ## Como Usar
 
 1. Configurando o projeto:
@@ -105,7 +105,7 @@ java -cp ".;gson-2.10.1.jar" ConversorMoedas
 - Insira o valor a ser convertido.
 - Veja o resultado da conversão.
 - Repita ou saia do programa.
-
+<br><br>
 ## Estrutura do Código
 
 ConversorMoedas.java
@@ -121,7 +121,7 @@ APIClient.java
 - Lê a resposta JSON e faz o parsing usando Gson.
 - Trata a resposta da API, lança exceção em caso de erro.
 - Retorna o valor convertido para a aplicação.
-
+<br><br>
 ## Detalhes de Implementação
 
 - Uso de Locale.US para garantir que o valor decimal na URL utilize ponto (.) e não vírgula (,) — requisito para APIs internacionais.
@@ -130,7 +130,7 @@ APIClient.java
 - Interface gráfica feita com JOptionPane, incluindo caixas de diálogo para entrada e mensagens.
 - Uso de tratamento de exceções para garantir que falhas na rede ou na API sejam capturadas e exibam mensagens amigáveis ao usuário.
 - Validação rigorosa da entrada para garantir apenas números válidos e opções do menu corretas.
-
+<br><br>
 ## Tratamento de Erros
 
 |        Tipo de Erro        |	                          Como é tratado?                           |
